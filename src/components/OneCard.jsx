@@ -34,7 +34,7 @@ export default class OneCard extends Component {
           </Card.Text>
           <Button variant="primary" onClick={() => this.handleShow()}>Go somewhere</Button>
         </Card.Body>
-        <PopUp show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} title={this.props.nom} imag={this.props.image} />
+        <PopUp show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} title={this.props.nom} imag={this.props.image} showForm={this.props.showForm} />
       </Card>
     )
   }

@@ -20,22 +20,23 @@ export default class PopUp extends Component {
     >
 
 
-      <Modal.Header closeButton>
-      <img src={this.props.imag} alt="" style={{ width: '20rem' }} className='d-flex justify-content-center'/>
-      
-        <Modal.Title id="contained-modal-title-vcenter">
-            
-          {this.props.title}
-        </Modal.Title>
+      <Modal.Header closeButton >
+      <img src={this.props.imag} alt="" style={{ width: '25rem', display:'flex',justifyContent:'center' }} />
       </Modal.Header>
       <Modal.Body>
+      <Modal.Title id="contained-modal-title-vcenter">
+            
+            {this.props.title}
+          </Modal.Title>
         <h4></h4>
         <p>
          {this.props.body}
         </p>
       </Modal.Body>
       <Modal.Footer>
-        {/* <Button onClick={props.onHide}>Close</Button> */}
+        <Button onClick={()=>{this.props.handleClose()
+        this.props.showForm({imag:this.props.imag,title:this.props.title,body:this.props.body})
+        }}>Close</Button>
       </Modal.Footer>
     </Modal>
       </div>
