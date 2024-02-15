@@ -5,10 +5,11 @@ import Card from 'react-bootstrap/Card';
 
 export default class AllCards extends Component {
   render() {
+    console.log(data);
     return (
-      <div>
+      <div className='d-flex flex-wrap gap-5 p-5 justify-content-center'>
         {data.map(card=>(
-            <Card key={card.id} image={card.src} nom={card.name} descrp={card.description} price={card.price}/>
+            <OneCard key={card.id} image={card.src} nom={card.name} descrp={card.description} price={card.price}/>
         ))}
       </div>
     )

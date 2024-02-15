@@ -4,15 +4,19 @@ import Card from 'react-bootstrap/Card';
 
 
 export default class OneCard extends Component {
+  constructor(props){
+    super()
+    
+  }
   render() {
+   
     return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="this.propos.src" />
+        <Card style={{ width: '27rem' }}>
+        <Card.Img variant="top" src={this.props.image} />
         <Card.Body>
-          <Card.Title>this.propos.name</Card.Title>
+          <Card.Title>{this.props.nom}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {this.props.descrp}
           </Card.Text>
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
