@@ -4,6 +4,7 @@ import iset from "../assets/DSC_5148 (2).JPG"
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import Formation from "./Formation";
 
 export default class Formulaire extends Component {
   constructor(props) {
@@ -55,6 +56,9 @@ export default class Formulaire extends Component {
 
         <h1 className="p-5 text-center">{this.props.selectedItem.title}</h1>
         <p className="px-5">{this.props.selectedItem.body}</p>
+
+        <Formation/>
+
 
 
         <Form>

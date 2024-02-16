@@ -25,15 +25,15 @@ export default class OneCard extends Component {
   render() {
    
     return (
-        <Card style={{ width: '27rem' }}>
-        <Card.Img variant="top" src={this.props.image}  style={{height:'17rem'}}/>
+        <Card style={{ width: '20rem' }}>
+        <Card.Img variant="top" src={this.props.image}  style={{height:'12rem'}}/>
         <Card.Body>
-          <Card.Title style={{width:'25rem', height:'48px'}}>{this.props.nom}</Card.Title>
-          <Card.Text style={{width:'25rem', height:'144px'}}>
+          <Card.Title style={{width:'18rem', height:'48px'}}>{this.props.nom}</Card.Title>
+          <Card.Text style={{width:'18rem', height:'144px'}}>
             {this.props.descrp}
           </Card.Text>
           <div className='d-flex justify-content-around'>
-          <Button style={{width:'7rem'}} variant="primary" onClick={() => this.handleShow()}>More</Button>
+          <Button style={{width:'7rem'}} variant="info" onClick={() => this.handleShow()}>More</Button>
          
           </div>
         </Card.Body>

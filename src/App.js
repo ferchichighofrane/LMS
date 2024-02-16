@@ -6,6 +6,8 @@ import AllCards from "./components/AllCards";
 import Formulaire from "./components/Formulaire";
 import { Component } from "react";
 import FooterSfectoria from "./components/footer/FooterSfectoria";
+import Categories from "./components/Categories";
+import OurTeachers from "./components/OurTeachers";
 
 class App extends Component {
   constructor() {
@@ -33,7 +35,9 @@ class App extends Component {
         {this.state.showform === false ? (
           <div>
             <CarousselSfectoria />
+            <Categories/>
             <AllCards showForm={this.showForm} />
+            <OurTeachers/>
           </div>
         ) : (
           <Formulaire showHome={this.showHome} selectedItem={this.state.selectedItem}/>
