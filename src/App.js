@@ -5,6 +5,7 @@ import CarousselSfectoria from "./components/CarousselSfectoria";
 import AllCards from "./components/AllCards";
 import Formulaire from "./components/Formulaire";
 import { Component } from "react";
+import FooterSfectoria from "./components/footer/FooterSfectoria";
 
 class App extends Component {
   constructor() {
@@ -37,7 +38,10 @@ class App extends Component {
         ) : (
           <Formulaire showHome={this.showHome} selectedItem={this.state.selectedItem}/>
         )}
+       
       </div>
+
+      
     );
   }
 }

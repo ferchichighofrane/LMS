@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+
 export default class PopUp extends Component {
     constructor(props){
         super()
@@ -21,22 +22,27 @@ export default class PopUp extends Component {
 
 
       <Modal.Header closeButton >
-      <img src={this.props.imag} alt="" style={{ width: '25rem', display:'flex',justifyContent:'center' }} />
+      <Modal.Title id="contained-modal-title-vcenter"  >
+      <h3>{this.props.title}</h3>
+          </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <Modal.Title id="contained-modal-title-vcenter">
+        <div className='d-flex justify-content-center'>
+        <img src={this.props.imag} alt="" style={{ width: '25rem' }} />
+        </div>
+      
+      
             
-            {this.props.title}
-          </Modal.Title>
+         
         <h4></h4>
         <p>
          {this.props.body}
         </p>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={()=>{this.props.handleClose()
+      <Modal.Footer className='d-flex justify-content-center'>
+        <Button  onClick={()=>{this.props.handleClose()
         this.props.showForm({imag:this.props.imag,title:this.props.title,body:this.props.body})
-        }}>Close</Button>
+        }}>Learn more</Button>
       </Modal.Footer>
     </Modal>
       </div>
