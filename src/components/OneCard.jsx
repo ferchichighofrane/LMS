@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Popup from './Popup';
-
+import PopUp from './PopUp';
 
 
 export default class OneCard extends Component {
@@ -12,7 +11,8 @@ export default class OneCard extends Component {
       show:false
     }
     this.handleClose=this.handleClose.bind(this)
-  } 
+  }
+    
 
     handleShow() {
       this.setState({ show: true });}
@@ -20,30 +20,25 @@ export default class OneCard extends Component {
       handleClose() {
         this.setState({ show: false });
       }
-
-  render() {
-    return ( 
-      <div>
-         <Card style={{ width: '21rem', height:"35rem" }} className='border border-info'>
-          <img src={this.props.image} alt="" style={{height:"250px"}}/>
-      {/* <Card.Img variant="top" style={{width:"18rem", height:"40rem"}} src={this.props.image} /> */}
-      <Card.Body className='p-0'>
-      <Card.Title  className='text-center py-3'>{this.props.nom}</Card.Title>
-        {/* <Card.Title className='p-3'>{this.props.nom}</Card.Title> */}
-        <Card.Text className='px-3' style={{ height:"5rem"}}>{this.props.descrp}</Card.Text>
-        {/* <Card.Text>{this.props.duree}</Card.Text>
-        <Card.Text>{this.props.lev}</Card.Text>*/}
-        <Card.Text className='text-center'>{this.props.pri}</Card.Text> 
-        <div className='d-flex justify-content-center'>
-        <Button  variant="outline-info" onClick={() => this.handleShow()} >Lire plus</Button>
-
-        </div>
-        
-      </Card.Body>
-      <Popup show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} duree={this.props.duree} title={this.props.nom} lev={this.props.lev} pri={this.props.pri} imag={this.props.image} showForm={this.props.showForm} />
-    </Card>
-      </div>
+    
   
-    )
+  render() {
+   
+    return (
+        <Card style={{ width: '20rem' }}>
+        <Card.Img variant="top" src={this.props.image}  style={{height:'12rem'}}/>
+        <Card.Body>
+          <Card.Title style={{width:'18rem', height:'48px'}}>{this.props.nom}</Card.Title>
+          <Card.Text style={{width:'18rem', height:'144px'}}>
+            {this.props.descrp}
+          </Card.Text>
+          <div className='d-flex justify-content-around'>
+          <Button style={{width:'7rem'}} variant="info" onClick={() => this.handleShow()}>More</Button>
+         
+          </div>
+        </Card.Body>
+        <PopUp show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} title={this.props.nom} imag={this.props.image} showForm={this.props.showForm} html={this.props.html} css={this.props.css}  bootstrap={this.props.bootstrap} js={this.props.js} jquery={this.props.jquery} react={this.props.react}  node={this.props.node} git={this.props.git} github={this.props.github}/>
+      </Card>
+     )
   }
 }

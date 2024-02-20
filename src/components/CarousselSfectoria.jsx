@@ -6,48 +6,25 @@ import Groupesf from '../assets/Groupesf.jpg';
 import JCI from '../assets/JCI.jpg';
 
 
-<assets />
-
+const list = [fabskillPhoto, Groupesfec, Groupesf, JCI]
 export default class CarousselSfectoria extends Component {
   render() {
     return (
       <div>
+
         <Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={fabskillPhoto}
-          alt="First slide"
-          height="550px"
-        />
-        </Carousel.Item>
-      
-        <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Groupesfec}
-          alt="First slide"
-          height="500px"
-        />
-        </Carousel.Item>
-        <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Groupesf}
-          alt="First slide"
-          height="500px"
-        />
-        </Carousel.Item>
-        <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={JCI}
-          alt="First slide"
-          height="550px"
-        />
-        </Carousel.Item>
-        
-    </Carousel> 
+          {list.map((elem, i) =>
+            <Carousel.Item key={i}>
+              <img
+                className="d-block w-100"
+                src={elem}
+                alt="First slide"
+                height="600px"
+                style={{ objectFit: 'cover' }}
+              />
+            </Carousel.Item>
+          )}
+        </Carousel>
       </div>
     )
   }

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import { Component } from "react";
-import './App.css';
-import Header from './components/Header';
+import "./App.css";
+import Header from "./layouts/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CarousselSfectoria from './components/CarousselSfectoria'
-import Formationslist from './components/Formationslist';
-import Reviewslist from './components/Reviewslist';
-import Formu from './components/Formu';
-import Discription from './components/Discription';
-
-
-
+import CarousselSfectoria from "./components/CarousselSfectoria";
+import AllCards from "./components/AllCards";
+import Formulaire from "./pages/Formulaire";
+import { Component } from "react";
+import FooterSfectoria from "./layouts/FooterSfectoria";
+import Categories from "./components/Categories";
+import OurTeachers from "./components/OurTeachers";
+import OneReview from "./components/reviews/OneReview";
+import AllReviews from "./components/reviews/AllReviews";
+import AboutHome from "./components/AboutHome";
+import Home from "./pages/home/Home";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       showform: false,
-      selectedItem:{}
+      selectedItem: {}
     };
     this.showHome = this.showHome.bind(this);
     this.showForm = this.showForm.bind(this);
@@ -27,29 +28,27 @@ class App extends Component {
     this.setState({ showform: false });
   }
   showForm(item) {
-    this.setState({ showform: true,selectedItem:item});
+    this.setState({ showform: true, selectedItem: item });
   }
 
   render() {
     return (
       <div>
         <Header />
+
         {this.state.showform === false ? (
-          <div>
-            <CarousselSfectoria />
-            <Formationslist showForm={this.showForm} />
-          </div>
+          <Home showForm={this.showForm} />
         ) : (
-          <Formu showHome={this.showHome} selectedItem={this.state.selectedItem}/>
+          <Formulaire showHome={this.showHome} selectedItem={this.state.selectedItem} />
         )}
-       <Reviewslist />
-       <Discription/>
-  
+
+        <FooterSfectoria />
+
+
+
       </div>
-      
-        
-      
-      
+
+
     );
   }
 }
