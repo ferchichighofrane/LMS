@@ -1,10 +1,21 @@
 
 [
-    { "id":"1",
+    {
+       "id":"1",
       "name": "Formation Développement Web Frontend",
       "description": "Cette formation vous plonge dans le monde du développement web frontend, vous enseignant les fondamentaux du HTML, CSS et JavaScript. ",
       "src":"https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/324859338/original/7efa98110efb99b180aeadf2501af010c4602990/build-custom-web-applications-with-mern-stack-as-a-professional-developer.jpeg",
-      "price":"900dt"
+      "price":"900dt",
+      "html":"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png",
+      "css":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs-53NX0aNzFeyVw81k3PwNHdjhtdFxHhC1z-_0AsSBw&s",
+      "bootstrap":"https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+      "js":"https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
+      "jquery":"https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png",
+      "react":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      "node":"https://e7.pngegg.com/pngimages/493/735/png-clipart-node-js-javascript-express-js-mongodb-github-github-angle-text.png",
+      "git":"https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "github":"https://cdn-icons-png.flaticon.com/512/25/25231.png"
+      
     },
     {"id":"2",
       "name": "Formation Avancée CSS et Responsive Design",
@@ -24,11 +35,15 @@
     ,      "src":"https://www.datadev.app/img/Front-End.png",
       "price":"900dt"
     },
-    {"id":"5",
+    {
+      "id":"5",
       "name": "Formation React.js",
       "description": "Cette formation vous plonge dans le monde de React.js, la bibliothèque JavaScript de premier plan pour la construction d'interfaces utilisateur. s applications web modernes et réactives."
     ,      "src":"https://coodesh.com/blog/wp-content/uploads/2022/05/fazer-to-do-list-em-react-1152x648.jpg",
       "price":"900dt"
+      
+      
+
     },
     {"id":"6",
       "name": "Formation Express.js",

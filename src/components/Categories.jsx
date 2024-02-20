@@ -5,7 +5,7 @@ import data from "../data/courseCategorie.json";
 export default class Categories extends Component {
   render() {
     return (
-      <div>
+      <div className="py-5">
         <div className="d-flex justify-content-center py-5 align-items-center flex-wrap">
         <h1 style={{fontFamily:'Brittany Signature'}}>Course Categories</h1>
         <div style={{height:"5px", width: "80px", backgroundColor: "rgb(66, 177, 188)", marginRight: "42px" }} >

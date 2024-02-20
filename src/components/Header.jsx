@@ -28,28 +28,6 @@ export default class Header extends Component {
       </Container>
     </Navbar>
 
-        {/* <div className="d-flex justify-content-between">
-          <div  className="d-flex align-items-center">
-            <a href="">
-              <img src={require("../assets/logo.png")} width={"180px"} />
-            </a>
-
-            
-              <a href="" className="px-5">
-                <p style={{fontSize:"20px"}}>Home</p>
-              </a>
-
-              <a href="" className="px-5">
-                <p>About us</p>
-              </a>
-          </div>
-
-          <div>
-            <a href="">
-              <VscAccount />
-            </a>
-          </div>
-        </div> */}
       </div>
     );
   }

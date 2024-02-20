@@ -37,8 +37,8 @@ export default class OneCard extends Component {
          
           </div>
         </Card.Body>
-        <PopUp show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} title={this.props.nom} imag={this.props.image} showForm={this.props.showForm} />
+        <PopUp show={this.state.show} handleClose={this.handleClose}  body={this.props.descrp} title={this.props.nom} imag={this.props.image} showForm={this.props.showForm} html={this.props.html} css={this.props.css}  bootstrap={this.props.bootstrap} js={this.props.js} jquery={this.props.jquery} react={this.props.react}  node={this.props.node} git={this.props.git} github={this.props.github}/>
       </Card>
-    )
+     )
   }
 }

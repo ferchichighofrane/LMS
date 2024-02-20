@@ -36,7 +36,7 @@ componentDidMount(){
         </div>
         <div className='d-flex gap-3 justify-content-center flex-wrap'>
         {this.state.data.map((teacher)=>(
-            <OneTeacher id={teacher.id} nom={teacher.nom} specialite={teacher.specialite} src={teacher.src}  />
+            <OneTeacher id={teacher.id} nom={teacher.nom} specialite={teacher.specialite} src={teacher.src} about={teacher.about}  />
         )
         
         )}

@@ -9,7 +9,7 @@ export default class AllCards extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{backgroundColor:"#F4FAFB",marginTop:"10rem"}}>
         <div className="d-flex justify-content-center py-5 align-items-center flex-wrap">
         <h1 style={{fontFamily:'Brittany Signature'}}>Our Courses</h1>
         <div style={{height:"5px", width: "80px", backgroundColor: "rgb(66, 177, 188)", marginRight: "42px" }} >
@@ -24,6 +24,15 @@ export default class AllCards extends Component {
                 nom={card.name}
                 descrp={card.description}
                 price={card.price}
+                html={card.html}
+                css={card.css}
+                bootstrap={card.bootstrap}
+                js={card.js}
+                jquery={card.jquery}
+                react={card.react}
+                node={card.node}
+                git={card.git}
+                github={card.github}
                 showForm={this.props.showForm}
               />
             ))}
