@@ -1,23 +1,24 @@
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./layouts/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CarousselSfectoria from "./components/CarousselSfectoria";
 import AllCards from "./components/AllCards";
-import Formulaire from "./components/Formulaire";
+import Formulaire from "./pages/Formulaire";
 import { Component } from "react";
-import FooterSfectoria from "./components/footer/FooterSfectoria";
+import FooterSfectoria from "./layouts/FooterSfectoria";
 import Categories from "./components/Categories";
 import OurTeachers from "./components/OurTeachers";
 import OneReview from "./components/reviews/OneReview";
 import AllReviews from "./components/reviews/AllReviews";
 import AboutHome from "./components/AboutHome";
+import Home from "./pages/home/Home";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       showform: false,
-      selectedItem:{}
+      selectedItem: {}
     };
     this.showHome = this.showHome.bind(this);
     this.showForm = this.showForm.bind(this);
@@ -27,7 +28,7 @@ class App extends Component {
     this.setState({ showform: false });
   }
   showForm(item) {
-    this.setState({ showform: true,selectedItem:item});
+    this.setState({ showform: true, selectedItem: item });
   }
 
   render() {
@@ -36,25 +37,18 @@ class App extends Component {
         <Header />
 
         {this.state.showform === false ? (
-          <div>
-            <CarousselSfectoria />
-            <Categories/>
-            <AboutHome/>
-            <AllCards showForm={this.showForm} />
-            <OurTeachers/>
-            <AllReviews/>
-          </div>
+          <Home showForm={this.showForm} />
         ) : (
-          <Formulaire showHome={this.showHome} selectedItem={this.state.selectedItem}/>
+          <Formulaire showHome={this.showHome} selectedItem={this.state.selectedItem} />
         )}
 
-        <FooterSfectoria/>
-       
+        <FooterSfectoria />
+
 
 
       </div>
 
-      
+
     );
   }
 }
