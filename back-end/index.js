@@ -8,16 +8,9 @@ function handleRequest(req, res) {
     res.writeHead(200, { "Content-type": "text/plain" });
     return res.end("hello yasmi");
   }
-  if (req.method==="POST" && req.url==="/teacher"){
-    let body ='';
+  if (req.method === "POST" && req.url === "/teacher") {
+    let body = '';
   }
-  
-  
-  
-  
-  
-  
-  
   else if (req.method === "GET" && req.url === "/testhtml") {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(`

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import front from '../assets/dab0498f-7405-497f-ae02-dde9fd87406a.jpg'
+import front from '../assets/dab0498f-7405-497f-ae02-dde9fd87406a copy.jpg'
 
 export default class AboutHome extends Component {
   render() {

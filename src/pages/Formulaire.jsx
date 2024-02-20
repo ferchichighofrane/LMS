@@ -4,13 +4,15 @@ import iset from "../assets/DSC_5148 (2).JPG";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import Formation from "./Formation";
+import Formation from "../components/Formation";
 
 export default class Formulaire extends Component {
   constructor(props) {
     super();
   }
-
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <div>
