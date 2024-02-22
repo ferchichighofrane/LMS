@@ -23,6 +23,7 @@ export default class AllCards extends Component {
                 image={card.src}
                 nom={card.name}
                 descrp={card.description}
+                title={card.title}
                 price={card.price}
                 html={card.html}
                 css={card.css}

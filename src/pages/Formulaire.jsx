@@ -16,17 +16,15 @@ export default class Formulaire extends Component {
   render() {
     return (
       <div>
+
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
             <img
-              className="d-block w-100"
-              src={this.props.selectedItem.imag}
+             className="d-block w-100"
+              src={this.props.selectedItem.image}
               alt="First slide"
               style={{ height: "35rem" }}
-            />
-            <Carousel.Caption>
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            />            <Carousel.Caption>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -36,9 +34,7 @@ export default class Formulaire extends Component {
               alt="Second slide"
               style={{ height: "35rem" }}
             />
-            <Carousel.Caption>
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption>              
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -49,18 +45,13 @@ export default class Formulaire extends Component {
               style={{ height: "35rem" }}
             />
             <Carousel.Caption>
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
 
-
         <div>
         <h1 className="p-5 text-center">{this.props.selectedItem.title}</h1>
-
         </div>
 
         <div className="d-flex justify-content-center p-5 flex-wrap align-items-center flex-wrap">
@@ -75,9 +66,31 @@ export default class Formulaire extends Component {
           ></div>
         </div>
 
+
+
+
+
+
+
+        
+</div>)}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
 
-        <div className="d-flex justify-content-around gap-5 p-5 align-items-center">
+        {/* <div className="d-flex justify-content-around gap-5 p-5 align-items-center"> */}
           {/* <div  style={{width:"30rem", backgroundColor:"#FFFFF"}}  className="d-flex flex-wrap gap-4  ">
               
                 <img src={this.props.selectedItem.html} alt="" width="35px" style={{height:"35px"}}/>
@@ -95,7 +108,7 @@ export default class Formulaire extends Component {
 
          
 
-          
+{/*           
         </div>
 
         <div class="container-xxl py-5">
@@ -152,60 +165,4 @@ export default class Formulaire extends Component {
       </div>
     );
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  /*
-
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-       }
-
-
-
-
-        
-
-
-        
-       
-
-
-
-        
-
-
-
-
-
-
-
-
-        {/* <button onClick={() => this.props.showHome()}>back home</button>
-      </div> */
-}
+} */}

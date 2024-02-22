@@ -35,7 +35,7 @@ export default class PopUp extends Component {
               onClick={() => {
                 this.props.handleClose();
                 this.props.showForm({
-                  imag: this.props.imag,
+                  image: this.props.image,
                   title: this.props.title,
                   body: this.props.body,
                   html: this.props.html,
