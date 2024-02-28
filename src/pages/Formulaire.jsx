@@ -6,6 +6,17 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Formation from "../components/Formation";
 
+import galley7 from "../assets/galley7.JPG";
+import gallery6 from "../assets/gallery6.JPG";
+import gallery2 from "../assets/gallery2.JPG";
+import gallery5 from "../assets/gallery5.JPG";
+import galll1 from "../assets/11.JPG";
+import galll2 from "../assets/12.JPG";
+import galll3 from "../assets/23.JPG";
+import galll4 from "../assets/33.JPG"
+
+
+
 export default class Formulaire extends Component {
   constructor(props) {
     super();
@@ -62,11 +73,53 @@ export default class Formulaire extends Component {
               width: "80px",
               backgroundColor: "rgb(66, 177, 188)",
               marginRight: "42px",
-            }}
-          ></div>
+            }} 
+          >  </div>
+          <h1 className="p-5 text-center">{this.props.selectedItem.title}</h1>
+          <h1 >{this.props.selectedItem.price}</h1>
+
+
+
         </div>
 
+        
+        <div className="d-flex justify-content-center p-5 flex-wrap align-items-center flex-wrap">
+          <h1 style={{ fontFamily: "Brittany Signature" }}>Gallery</h1>
+          <div
+            style={{
+              height: "5px",
+              width: "80px",
+              backgroundColor: "rgb(66, 177, 188)",
+              marginRight: "42px",
+            }}
+          ></div>
+<div  className="d-flex flex-wrap gap-5 p-5 justify-content-center">
+<img class="img-thumbnail" src={galley7} alt="" style={{  borderColor: 'black', borderWidth: 1,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={gallery6} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={gallery2} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={gallery5} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
 
+<img class="img-thumbnail" src={galll1} alt="" style={{  borderColor: 'black', borderWidth: 1,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={galll2} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={galll3} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
+<img class="img-thumbnail" src={galll4} alt="" style={{ borderColor: 'black', borderWidth: 1 ,height:"210px", width: "250px" }}/>
+</div>
+
+
+
+        </div>
+<div  className="d-flex justify-content-center p-5 flex-wrap align-items-center flex-wrap" >
+<h1 style={{ fontFamily: "Brittany Signature" }}>Reviews</h1>
+          <div
+            style={{
+              height: "5px",
+              width: "80px",
+              backgroundColor: "rgb(66, 177, 188)",
+              marginRight: "42px",
+            }}
+          ></div>
+        
+</div>
 
 
 

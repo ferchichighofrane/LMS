@@ -14,7 +14,7 @@ function handleRequest(req, res) {
   else if (req.method === "GET" && req.url === "/testhtml") {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(`
-        <!DOCTYPE html>
+        <!DOCTYPE html>   
 <html lang="en">
   <head>
     <title>hii</title>
